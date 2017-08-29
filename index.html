@@ -3,20 +3,42 @@
     <head>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" />
         <link href="style.css" rel="stylesheet" />
+        <link href='digital-clock/clockstyle.css' rel="stylesheet" />
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+        <script type="text/javascript" src='digital-clock/clockscript.js'></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="quote-generator/js/index.js"></script>
         <script src="script.js"></script>
     </head>
     <body>
-        <div class="container">
+        <div class="container temp-container">
             <div id=weather-container>
                 <div id="weather" class="temperature"></div>
                 <div id="sky"></div>
                 <div id="location">
+                    <div class="icon-img">
                     <img class="icon" src='' />
+                    </div>
                     <p class="icon-name"></p>
                 </div>
                 <div id="time"></div>
             </div>
+        </div>
+        <div class="container clock-container">
+            <div class="clock">
+                <div id="Date"></div>
+                <ul>
+	                <li id="hours"> </li>
+                    <li id="point">:</li>
+                    <li id="min"> </li>
+                    <li id="point">:</li>
+                    <li id="sec"> </li>
+                </ul>            
+            </div>
+        </div>
+        <div class="container quote-container">
+            <h2 class="quote quote-content">Be the change you wish to see in the world!</h2>
+            <span class="author quote-content">- Mahatma Gandhi</span>
         </div>
     </body>
 </html>

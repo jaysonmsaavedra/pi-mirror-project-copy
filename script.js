@@ -21,6 +21,10 @@ $(document).ready(function () {
         var desc = desc.toLowerCase();
         switch (desc) {
             case 'clouds':
+                $(".icon").attr("src", "http://res.cloudinary.com/saavy1/image/upload/v1504047693/cloud-cropped_cluut9.gif");
+                console.log("clouds");
+                break;
+            case 'haze':
                 $(".icon").attr("src", "https://res.cloudinary.com/saavy1/image/upload/v1503986478/CLOUDY_e4vy1w.gif");
                 console.log("clouds");
                 break;
@@ -28,12 +32,16 @@ $(document).ready(function () {
                 $(".icon").attr("src", "https://res.cloudinary.com/saavy1/image/upload/v1503986478/SUNNY_wxrape.gif");
                 break;
             case 'rain':
-                $(".icon").attr("src", "https://res.cloudinary.com/saavy1/image/upload/v1503986478/RAINY_spiakm.gif");
+                $(".icon").attr("src", "http://res.cloudinary.com/saavy1/image/upload/v1504047693/rain-cropped_blpmbs.gif");
+                break;
+            case 'thunder':
+                $(".icon").attr("src", "http://res.cloudinary.com/saavy1/image/upload/v1504047693/thunder-cropped_emsyay.gif");
                 break;
             default:
                 break;
         }
     }
+    
     
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
@@ -43,7 +51,7 @@ $(document).ready(function () {
             $.getJSON(api, getWeather);
             IconGen()
         });
-    }
+    }  
 });
 
 /*
