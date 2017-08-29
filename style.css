@@ -20,6 +20,10 @@ body {
   font-size: 2em;
 }
 
+.icon {
+    width: 100px;
+}
+
 .btn:hover {
   cursor: pointer;
 }
