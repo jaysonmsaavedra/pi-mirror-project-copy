@@ -23,7 +23,7 @@ $(document).ready(function () {
             case 'clouds':
                 $(".icon").attr("src", "http://res.cloudinary.com/saavy1/image/upload/v1503986478/CLOUDY_e4vy1w.gif");
                 break;
-            case 'clear':
+            case 'Clear':
                 $(".icon").attr("src", "http://res.cloudinary.com/saavy1/image/upload/v1503986478/SUNNY_wxrape.gif");
                 break;
             case 'rain':
