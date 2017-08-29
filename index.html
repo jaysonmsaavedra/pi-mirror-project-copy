@@ -1,15 +1,49 @@
-<div class="container">
-  <h1>Jayson's Weather App</h1>
-  <div id=weather-container>
-    <div id="weather" class="temperature"></div>
-    <div id="sky">
-      <iframe src='https://gfycat.com/ifr/MammothElectricBactrian' frameborder='0' scrolling='no' width='200' allowfullscreen></iframe>
-      <iframe src='https://gfycat.com/ifr/ImmediateUncomfortableKakarikis' frameborder='0' scrolling='no' width='200' allowfullscreen></iframe>
-      <iframe src='https://gfycat.com/ifr/BoilingJovialCatfish' frameborder='0' scrolling='no' width='200' allowfullscreen></iframe>
-      <iframe src='https://gfycat.com/ifr/KeyDiligentBison' frameborder='0' scrolling='no' width='200' allowfullscreen></iframe>
-    </div>
-    <div id="location"></div>
-    <div id="time"></div>
-    <br>
-  </div>
-</div>
+<!doctype html>
+<html>
+    <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Jayson's Weather App</h1>
+            <div id=weather-container>
+            <div id="weather" class="temperature"></div>
+                <div id="sky">
+                    <iframe src='https://gfycat.com/ifr/MammothElectricBactrian' frameborder='0' scrolling='no' width='200' allowfullscreen></iframe>
+                    <iframe src='https://gfycat.com/ifr/ImmediateUncomfortableKakarikis' frameborder='0' scrolling='no' width='200' allowfullscreen>   </iframe>
+                    <iframe src='https://gfycat.com/ifr/BoilingJovialCatfish' frameborder='0' scrolling='no' width='200' allowfullscreen></iframe>
+                    <iframe src='https://gfycat.com/ifr/KeyDiligentBison' frameborder='0' scrolling='no' width='200' allowfullscreen></iframe>
+                </div>
+            <div id="location"></div>
+            <div id="time"></div>
+            <br>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    $(document).ready(function() {
+        var api,
+            lat,
+            lon,
+            apiUrl = "https://api.openweathermap.org/data/2.5/weather?lat=",
+            apiKey = "5aee96d3327e32e4301548ed02bf8431",
+            units = "imperial";
+
+    function getWeather(res) {
+        $(".temperature").text(res.main.temp + " ℉");
+    }
+
+    if(navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            lat = position.coords.latitude;
+            lon = position.coords.longitude;
+            api = apiUrl + lat + "&lon=" + lon + "&APPID=" + apiKey + "&units=" + units;
+            $.getJSON(api, getWeather);
+            console.log(api);
+            });
+        }
+    });
+    </script>
+</html>
