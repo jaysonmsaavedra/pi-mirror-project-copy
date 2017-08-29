@@ -24,7 +24,7 @@ $(document).ready(function () {
                 $(".icon").attr("src", "https://res.cloudinary.com/saavy1/image/upload/v1503986478/CLOUDY_e4vy1w.gif");
                 console.log("clouds");
                 break;
-            case 'Clear':
+            case 'clear':
                 $(".icon").attr("src", "https://res.cloudinary.com/saavy1/image/upload/v1503986478/SUNNY_wxrape.gif");
                 break;
             case 'rain':
