@@ -21,13 +21,14 @@ $(document).ready(function () {
         var desc = desc.toLowerCase();
         switch (desc) {
             case 'clouds':
-                $(".icon").attr("src", "http://res.cloudinary.com/saavy1/image/upload/v1503986478/CLOUDY_e4vy1w.gif");
+                $(".icon").attr("src", "https://res.cloudinary.com/saavy1/image/upload/v1503986478/CLOUDY_e4vy1w.gif");
+                console.log("clouds");
                 break;
             case 'Clear':
-                $(".icon").attr("src", "http://res.cloudinary.com/saavy1/image/upload/v1503986478/SUNNY_wxrape.gif");
+                $(".icon").attr("src", "https://res.cloudinary.com/saavy1/image/upload/v1503986478/SUNNY_wxrape.gif");
                 break;
             case 'rain':
-                $(".icon").attr("src", "http://res.cloudinary.com/saavy1/image/upload/v1503986478/RAINY_spiakm.gif");
+                $(".icon").attr("src", "https://res.cloudinary.com/saavy1/image/upload/v1503986478/RAINY_spiakm.gif");
                 break;
             default:
                 break;
