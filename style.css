@@ -1,15 +1,14 @@
 body {
   color: #123456;
   text-align: center;
-  background-color: #1192d3;
-  animation-duration: 4s;
 }
 
-.container {
-  margin-top: 120px;
-  background-color: white;
-  width: 600px;
-  border-radius: 20px;
+.weather-container {
+    top: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    width: 600px;
 }
 
 #weather-container {
@@ -21,7 +20,9 @@ body {
 }
 
 .icon {
-    width: 100px;
+    display: none;
+    min-width: 100px;
+    width: 15%;
 }
 
 .btn:hover {
