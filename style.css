@@ -1,36 +1,36 @@
-body {
-    color: #123456;
-    text-align: center;
-    animation-duration: 4s;
+* {
+    background-color: black;
+    color: white;
 }
 
-.temp-container {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 35%;
-    border-radius: 20px;
+.icon-img {
+    width: 150px;
+    height: 150px;
     overflow: hidden;
 }
 
-#weather-container {
-    padding: 15px;
+.temperature {
+    top: 45px;
+    left: 160px;
+    font-size: 3em;
+    width: 200px;
+    position: absolute;
 }
 
-#weather {
-    font-size: 4em;
+#weather-container {
+    margin-left: 15px;
+    left: 0;
+    position: absolute;
+}
+
+#location {
+    width: 150px;
 }
 
 .icon {
-    width: 240px;
-}
-
-.icon-name {
-    font-size: 4em;
-}
-
-.btn:hover {
-    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    margin: -70px 0 0 -75px;
 }
 
 .quote-container {
@@ -38,8 +38,62 @@ body {
     left: 0;
     right: 0;
     position: absolute;
+    font-size: 3em;
+    text-align: center;
 }
 
-.author {
-    font-size: 2em;
+/* clock stuff now */
+.clock {
+    top: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    padding: 15px 15px 0 0;
+}
+
+.time {
+    font-size: 6em;
+    list-style: none; 
+    text-align: center; 
+}
+
+.units { 
+    display: inline;
+}
+
+#point { 
+    position:relative; 
+    -moz-animation:mymove 1s ease infinite; 
+    -webkit-animation:mymove 1s ease infinite; 
+}
+
+@-webkit-keyframes mymove {
+    0% {
+        opacity:1.0;   
+        text-shadow:0 0 20px #00c6ff;
+    }
+    50% {
+        opacity:0; 
+        text-shadow:none; 
+    }
+    100% {
+        opacity:1.0; 
+        text-shadow:0 0 20px #00c6ff; 
+    }	
+}
+
+
+@-moz-keyframes mymove {
+    0% {
+        opacity:1.0; 
+        text-shadow:0 0 20px #00c6ff;
+    }
+    50% {
+        opacity:0; 
+        text-shadow:none; 
+    }
+    100% {
+        opacity:1.0; 
+        text-shadow:0 0 20px #00c6ff; 
+    }	
 }
