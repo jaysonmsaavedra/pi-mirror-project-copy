@@ -23,6 +23,10 @@
     position: absolute;
 }
 
+#date {
+    font-size: 3em;
+}
+
 #location {
     width: 150px;
 }

@@ -31,7 +31,7 @@ $(document).ready(function() {
     
     
     // Output the day, date, month and year    
-    $('#Date').html(dayNames[newDate.getDay()] + " the " + todaysDate + ', ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+    $('#date').html(dayNames[newDate.getDay()] + "<br />" + monthNames[newDate.getMonth()] + " " + todaysDate + ", " + newDate.getFullYear());
 
     setInterval( function() {
 	   // Create a newDate() object and extract the seconds of the current time on the visitor's
