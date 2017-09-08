@@ -8,13 +8,14 @@
         <script type="text/javascript" src="clockscript.js"></script>
         <script type="text/javascript" src="quotescript.js"></script>
         <script type="text/javascript" src="mainscript.js"></script>
+        <script type="text/javascript" src="news.js"></script>
     </head>
     <body>
         <div class="container temp-container">
             <div id=weather-container>
                 <div id="location">
                     <div class="icon-img">
-                    <img class="icon" src='' />
+                    <img src="" class="icon">
                     </div>
                     <div id="weather" class="temperature"></div>
                 </div>
@@ -32,6 +33,11 @@
                     <li id="point" class="units">:</li>
                     <li id="sec" class="units"> </li>
                 </ul>            
+            </div>
+            <div class="local-news">
+                <div id="today-news"></div>
+                <div id="news-author"></div>
+                <div id="published-date"></div>
             </div>
         </div>
         <div class="container quote-container">

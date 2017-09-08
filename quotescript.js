@@ -11,7 +11,6 @@ $(document).ready(function () {
 		$tweet.attr("href", tweetUrl + res.quoteText + " " + res.quoteAuthor);
 	}
 
-	$("#new-quote").on("click", onclick);
 	$.getJSON(apiUrl, getQuote);
     setInterval( function() {
         $.getJSON(apiUrl, getQuote);
