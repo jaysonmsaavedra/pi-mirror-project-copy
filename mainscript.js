@@ -28,7 +28,7 @@ $(document).ready(function () {
                 $(".icon").attr("src", "https://res.cloudinary.com/saavy1/image/upload/v1504708584/inverted-cloud_s8gyae.png");
                 console.log("clouds");
                 break;
-            case 'clear':
+            case 'clear', 'clear-day':
                 $(".icon").attr("src", "https://res.cloudinary.com/saavy1/image/upload/v1504708511/inverted-sunny_yydp4s.gif");
                 break;
             case 'rain':
